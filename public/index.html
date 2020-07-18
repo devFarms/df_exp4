@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" href="css/farmer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- The video -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="video/bg.mp4" type="video/mp4">
+    </video>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" onClick="introSection()" class="brand-logo center">&lt; df &gt;</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#" onClick="servicesSection()">Services</a></li>
+                    <li><a href="#" onClick="workExperienceSection()">Work</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#" onClick="aboutSection()">About</a></li>
+                    <li><a href="#" onClick="contactSection()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li class="menu-logo"><div class="logo-tagline">
+                <h2 class="logo">&lt; df &gt;</h2>
+                <h3>cultivating your bits...</h3>
+            </li>
+            <li>
+                    <div id="menu-list"></div>
+            </li>
+            <li><a href="#" onClick="servicesSection()">Services</a></li>
+            <li><a href="#" onClick="workExperienceSection()">Work</a></li>
+            <li><a href="#" onClick="aboutSection()">About</a></li>
+            <li><a href="#" onClick="contactSection()">Contact</a></li>
+        </ul>
+    </div>
+    <div id="content-wrapper">
+        <div class="section" id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <div class="logo-tagline">
+                            <h2 class="logo">&lt; df &gt;</h2>
+                            <h3>cultivating your bits...</h3>
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                        <h1>Page Heading</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="intro-services"></div>
+        <div class="section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Services Section</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <i class="large material-icons">developer_mode</i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Web Development</h3>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <i class="large material-icons">important_devices</i>
+                            </div>
+                            <div class="card-content">
+                                <h3>UI / UX Site Design</h3>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <i class="large material-icons">build</i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Site Management</h3>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services-work"></div>
+        <div class="section" id="work-experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Work Experience Section</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                        <h2>Work History</h2>
+                        <div class="row job-desc">
+                            <div class="col s12 l4">
+                                <h3>Web Systems Technician / Webmaster</h3>
+                                <p class="organization">City of Santa Ana</p>
+                                <p class="date">2000 - Present</p>
+                            </div>
+                            <div class="col s12 l8">
+                                <ul>
+                                    <li>Completely build out the City website.</li>
+                                    <li>Oversee the developement of web applications.</li>
+                                    <li>Project manage complete overhaul and migration into a CMS.</li>
+                                    <li>Provide web content best-practices training.</li>
+                                    <li>Manage web and database servers.</li>
+                                    <li>Maintain public website security and .</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row job-desc">
+                            <div class="col s12 l4">
+                                <h3>Job Title</h3>
+                                <p class="organization">Employer Name</p>
+                                <p class="date">Start and End Dates</p>
+                            </div>
+                            <div class="col s12 l8">
+                                <ul>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                    <li>Job duty and responsibility.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row job-desc">
+                            <div class="col s12 l4">
+                                <h3>Freelance Developer/Designer</h3>
+                                <p class="organization">el Fenix</p>
+                                <p class="date">2012 - Present</p>
+                            </div>
+                            <div class="col s12 l8">
+                                <ul>
+                                    <li>Designed and built from the ground up.</li>
+                                    <li>Created a custom theme for WordPress.</li>
+                                    <li>Devlop front-end PHP to gather and display content from outside sources.</li>
+                                    <li>Custom Google Calendar and Flickr integration.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="work-about"></div>
+        <div class="section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>About Section</h2>
+                        <p>
+                            <img src="http://www.recreation.ubc.ca/files/2015/07/Profile-Placeholder-400x400-01-copy-3.jpg" class="profile-pic" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-contact"></div>
+        <div class="section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Contact Section</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ornare libero. Donec nec eleifend magna. Curabitur at sapien orci. Morbi at ipsum sed nisi ultricies iaculis. Maecenas purus sapien, fermentum eu diam eget, semper ullamcorper nisi. Aenean justo enim, pharetra in accumsan vitae, dictum nec purus. Sed vel ex lacinia, scelerisque dolor eu, maximus arcu. Quisque eleifend erat eu congue facilisis. Mauris dignissim euismod ante vitae posuere. Proin tincidunt leo nulla, a pretium velit mollis at. Aenean placerat eros eu blandit tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="you@website.com" id="email" type="text" class="validate">
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="btn-large waves-effect waves-light grey" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-footer"></div>
+    <footer class="page-footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12" onClick="introSection()">
+                    <div class="logo-tagline">
+                        <h2 class="logo">&lt; df &gt;</h2>
+                        <h3>cultivating your bits...</h3>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul style="padding-top: 70px;">
+                        <li><a href="#!" onClick="servicesSection()">Services</a></li>
+                        <li><a href="#!" onClick="workExperienceSection()">Work</a></li>
+                        <li><a href="#!" onClick="aboutSection()">About</a></li>
+                        <li><a href="#!" onClick="contactSection()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 devFarms, cultivating your bits...
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>

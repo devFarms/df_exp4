@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans|Paytone+One');
+/*
+font-family: 'Fugaz One', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Paytone One', sans-serif;
+*/
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Paytone One', sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  color: rgb(255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  height: 100%;
+  margin-bottom: 200px;
+  min-height: 100%; /*for mozilla*/
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+#intro {
+  /* background: rgba(34, 46, 80, 1);
+  color: #dccfd3; */
+  margin: 0;
+}
+
+#second {
+  /* background: rgba(0, 121, 145, 1);
+  color: #dccfd3; */
+  margin: 0;
+}
+
+#third {
+  /* background: rgba(67, 154, 134, 1); */
+}
+
+#work-experience {
+  background: rgb(255,255,255);
+  border: 10px solid black;
+  color: #20b2aa;
+}
+
+#fourth {
+  /* background: rgba(188, 216, 193, 1); */
+}
+
+#fifth {
+  /* background: rgba(230, 232, 230, 1); */
+}
+
+.brand-logo {
+  font-family: 'Fugaz One', cursive;
+  font-size: 300%;
+}
+
+nav {
+  background: rgba(65, 143, 167,0.5);
+  font-family: 'Fugaz One', cursive;
+  font-size: 200%;
+  padding: 0 100px;
+}
+
+nav .brand-logo {
+  font-family: 'Fugaz One', cursive;
+}
+
+#footer {
+  background: rgb(3, 150, 125);
+  padding-top: 50px;
+  position: relative;
+}
+
+
+
+.card {
+  background: rgba(65, 143, 167,0.5);
+  /* border: 2px solid rgb(255,255,255); */
+  color: rgb(255,255,255);
+  font-size: 80%;
+}
+
+.card .card-image {
+  font-size: 140px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.card .card-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+

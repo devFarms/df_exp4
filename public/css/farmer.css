@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans|Paytone+One');
+/*
+- Fonts
+font-family: 'Fugaz One', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Paytone One', sans-serif;
+
+- Colors
+dark blue: 47, 72, 88
+light blue: 85, 221, 224
+mustard: 246, 174, 45
+orange: 242, 100, 25
+
+video gradient
+green: 170, 248, 188
+blue: 132, 191, 237
+
+*/
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  font-size: 150%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+video#bgVideo { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../video/bg.png) no-repeat;
+  background-size: cover; 
+}
+
+/* Add some content at the bottom of the video/page */
+#content-wrapper {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#intro {
+  color: rgb(255, 255, 255);
+  font-size: 120%;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+#intro h3 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#intro-services {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 99.1vw 0 0;
+  border-color: transparent rgb(47, 72, 88) transparent transparent;
+  transform: scale(1.0001);
+}
+
+.logo-tagline {
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Fugaz One', cursive;
+}
+
+#intro .logo-tagline h2 {
+
+  font-size: 125px;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav .logo-tagline h2 {
+  font-size: 90px;
+  margin: 0;
+  padding: 0;
+}
+.sidenav .logo-tagline h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+#services-work {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 99.1vw 0 0;
+  border-color: rgb(47, 72, 88) rgb(255, 255, 255) transparent transparent;
+  transform: scale(1.0001);
+}
+
+#work-about {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 99.1vw 0 0;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+  transform: scale(1.0001);
+}
+
+#about-contact {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 99.1vw 0 0;
+  border-color: transparent rgb(100, 100, 100) transparent transparent;
+  transform: scale(1.0001);
+}
+
+#contact-footer {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 99.1vw 0 0;
+  border-color: rgb(100, 100, 100) rgb(85, 221, 224) transparent transparent;
+  transform: scale(1.0001);
+}
+
+#menu-list {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 99.1vw 0 0;
+  border-color: rgb(80, 80, 80) rgb(100, 100, 100) transparent transparent;
+  transform: scale(1.0001);
+  margin-bottom: 50px;
+}
+
+#services {
+  background: rgb(47, 72, 88);
+  color: rgb(255, 255, 255);
+}
+
+#work-experience {
+  background: rgb(255, 255, 255);
+  color: rgb(150, 150, 150);
+}
+#work-experience table, td {
+  padding: 20px;
+  vertical-align: top;
+}
+#work-experience h2 {
+  font-size: 220%;
+}
+#work-experience h3 {
+  color: rgb(242, 100, 25);
+  font-family: 'Paytone One', sans-serif;
+  font-size: 140%;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+#work-experience ul {
+  margin: 0;
+  padding: 0;
+}
+#work-experience li {
+  padding: 0 0 10px 0;
+}
+#work-experience li:before {
+  color: rgb(242, 100, 25);
+  content: "\25E5";
+  padding: 0 20px 0 0;
+}
+
+.organization, .date {
+  color: rgb(160, 160, 160);
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.date {
+  padding-bottom: 30px;
+}
+
+.job-desc {
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 40px 0;
+}
+
+#contact {
+  background: rgb(100, 100, 100);
+  color: rgb(200, 200, 200);
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.brand-logo {
+  font-family: 'Fugaz One', cursive;
+}
+
+.profile-pic {
+  border-radius: 100px;
+  float: left;
+  margin: 20px;
+  width: 200px;
+}
+
+/* Mods to Materialize */
+
+.row {
+  margin-bottom: 0;
+}
+
+nav {
+  background: rgba(65, 143, 167,0.5);
+  font-family: 'Fugaz One', cursive;
+  padding: 0 100px;
+}
+
+nav .brand-logo {
+  font-family: 'Fugaz One', cursive;
+}
+
+#footer {
+  background: rgb(85, 221, 224);
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
+  position: relative;
+}
+
+#footer a {
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(10, 75, 112);
+}
+
+#footer .logo-tagline h2 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px rgb(10, 75, 112);
+}
+#footer .logo-tagline h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.card {
+  background: rgba(85, 221, 224, 0.1);
+  padding-top: 20px;
+}
+
+.card .card-image {
+  text-align: center;
+}
+
+.card .card-image .material-icons{
+  font-size: 8vw;
+  text-align: center;
+}
+
+.card .card-content {
+  font-size: 80%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.card-content h3 {
+  font-size: 200%;
+}
+
+
+.sidenav {
+  background-color: rgba(100, 100, 100);
+  color: rgb(200, 200, 200);
+}
+.menu-logo {
+  background-color: rgb(80, 80, 80);
+  font-size: 600%;
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+.sidenav li a {
+  color: rgb(200, 200, 200);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+  font-style: italic;
+}
+.sidenav-overlay {
+  /* background-color: transparent; */
+  z-index: 1;
+}
+
+/*** !important was needed for snippet ***/
+
+.validate {
+  color: rgb(255, 255, 255);
+}
+.input-field {
+  color: rgb(255, 255, 255);
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: rgb(246, 174, 45) !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid rgb(246, 174, 45) !important;
+  box-shadow: 0 1px 0 0 rgb(160, 160, 160) !important;
+  color: rgb(255, 255, 255);
+}
+
+.materialize-textarea {
+  color: rgb(255, 255, 255);
+}
+.materialize-textarea:focus + label {
+  color: rgb(246, 174, 45) !important;
+}
+.materialize-textarea:focus {
+  border-bottom: 1px solid rgb(246, 174, 45) !important;
+  box-shadow: 0 1px 0 0 rgb(160, 160, 160) !important;
+  color: rgb(255, 255, 255);
+}

@@ -59,7 +59,7 @@ video#bgVideo {
 
 #intro h3 {
   font-size: 25px;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   text-align: center;
 }
@@ -258,7 +258,7 @@ nav .brand-logo {
 }
 #footer .logo-tagline h3 {
   font-size: 18px;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   text-shadow: 1px 1px rgb(0, 0, 0);
 }
